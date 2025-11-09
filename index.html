@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voyage - Découvrez le monde</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- Google Fonts pour typographie moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">VOYAGE</div>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link" data-page="home">Accueil</a></li>
+          <li><a href="#destinations" class="nav-link" data-page="home">Destinations</a></li>
+          <li><a href="#a-propos" class="nav-link" data-page="home">À propos</a></li>
+          <li><a href="#contact" class="nav-link" data-page="home">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT (Homepage) -->
+    <main class="main-content">
+      <!-- SECTION ACCUEIL / HERO -->
+      <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Découvrez les plus belles destinations du monde</h1>
+          <p class="hero-subtitle">Évadez-vous vers des lieux d'exception</p>
+          <a href="#destinations" class="hero-btn">Explorer</a>
+        </div>
+      </section>
+
+      <!-- SECTION DESTINATIONS -->
+      <section id="destinations" class="destinations">
+        <div class="container">
+          <h2 class="section-title">Nos Destinations</h2>
+          <p class="section-subtitle">Une sélection de lieux emblématiques à travers le monde</p>
+
+          <div class="destinations-grid">
+            <!-- Gizeh -->
+            <a href="#" class="destination-card" data-destination="gizeh">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/71241/pyramids-egypt-ancient-culture-71241.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Pyramides de Gizeh"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Gizeh</h3>
+                <p class="card-description">
+                  Les majestueuses pyramides de Gizeh témoignent de la grandeur de l'Égypte antique.
+                  Un voyage dans le temps au cœur d'une civilisation millénaire.
+                </p>
+              </div>
+            </a>
+
+            <!-- Rio de Janeiro -->
+            <a href="#" class="destination-card" data-destination="rio">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/351283/pexels-photo-351283.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Rio de Janeiro"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Rio de Janeiro</h3>
+                <p class="card-description">
+                  Entre plages dorées et montagnes verdoyantes, Rio incarne la joie de vivre brésilienne.
+                  Le Christ Rédempteur veille sur cette cité vibrante et colorée.
+                </p>
+              </div>
+            </a>
+
+            <!-- Mykonos -->
+            <a href="#" class="destination-card" data-destination="mykonos">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Mykonos"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Mykonos</h3>
+                <p class="card-description">
+                  L'île grecque aux maisons blanches éclatantes et aux moulins à vent emblématiques.
+                  Un paradis méditerranéen où se mêlent tradition et modernité.
+                </p>
+              </div>
+            </a>
+
+            <!-- Prague -->
+            <a href="#" class="destination-card" data-destination="prague">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Prague"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Prague</h3>
+                <p class="card-description">
+                  La ville aux cent clochers séduit par son architecture gothique et baroque.
+                  Flânez sur le pont Charles et laissez-vous charmer par cette perle d'Europe centrale.
+                </p>
+              </div>
+            </a>
+
+            <!-- Tokyo -->
+            <a href="#" class="destination-card" data-destination="tokyo">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Tokyo"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Tokyo</h3>
+                <p class="card-description">
+                  La capitale nippone allie traditions ancestrales et technologie futuriste.
+                  Entre temples zen et gratte-ciels lumineux, Tokyo ne cesse de surprendre.
+                </p>
+              </div>
+            </a>
+
+            <!-- Venise -->
+            <a href="#" class="destination-card" data-destination="venise">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Venise"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Venise</h3>
+                <p class="card-description">
+                  La Sérénissime flotte sur ses canaux romantiques, entre palais et gondoles.
+                  Une cité unique au monde où chaque pont raconte une histoire.
+                </p>
+              </div>
+            </a>
+
+            <!-- Zanzibar -->
+            <a href="#" class="destination-card" data-destination="zanzibar">
+              <div class="card-image-wrapper">
+                <img
+                  src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Zanzibar"
+                  class="card-image"
+                />
+                <div class="card-overlay">
+                  <span class="card-overlay-text">Découvrir</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Zanzibar</h3>
+                <p class="card-description">
+                  L'archipel tanzanien offre des plages de sable blanc bordées d'eaux turquoise.
+                  Un havre de paix où se mêlent culture swahilie et nature préservée.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION À PROPOS -->
+      <section id="a-propos" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 class="section-title">Pourquoi voyager ?</h2>
+              <p class="about-paragraph">
+                Voyager, c'est s'ouvrir au monde et découvrir la richesse de ses cultures.
+                Chaque destination raconte une histoire unique, offre des paysages à couper le souffle
+                et crée des souvenirs impérissables.
+              </p>
+              <p class="about-paragraph">
+                De l'effervescence des grandes métropoles au calme des îles paradisiaques,
+                chaque lieu éveille nos sens et élargit nos horizons. Le voyage est une invitation
+                à sortir de sa zone de confort, à rencontrer l'autre et à se découvrir soi-même.
+              </p>
+              <p class="about-paragraph">
+                Laissez-vous inspirer par notre sélection de destinations d'exception
+                et partez à la conquête de nouvelles aventures.
+              </p>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Voyageur contemplant le monde"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contactez-nous</h2>
+          <p class="section-subtitle">Vous avez une question ? Nous sommes là pour vous répondre</p>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Nom</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="votre@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                rows="6"
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- DESTINATION PAGES (Hidden by default) -->
+    
+    <!-- GIZEH PAGE -->
+    <div class="destination-page" id="page-gizeh">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/71241/pyramids-egypt-ancient-culture-71241.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Gizeh</h1>
+          <p class="dest-hero-subtitle">Les Merveilles de l'Égypte Antique</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>Découvrez les Pyramides de Gizeh</h2>
+          <p>
+            Les pyramides de Gizeh sont parmi les monuments les plus emblématiques du monde antique. 
+            Construites il y a plus de 4 500 ans, elles témoignent du génie architectural et de la puissance 
+            des pharaons de l'Ancien Empire égyptien.
+          </p>
+          <p>
+            La Grande Pyramide de Khéops, la plus imposante des trois, fut pendant des millénaires la plus 
+            haute structure créée par l'homme. À ses côtés se dressent les pyramides de Khéphren et de Mykérinos, 
+            gardées éternellement par le mystérieux Sphinx.
+          </p>
+          <p>
+            Une visite à Gizeh est un voyage dans le temps, une plongée dans une civilisation fascinante 
+            qui continue d'émerveiller et d'intriguer. Les couchers de soleil sur les pyramides offrent 
+            des spectacles inoubliables, tandis que les musées du Caire regorgent de trésors millénaires.
+          </p>
+          <h2>À ne pas manquer</h2>
+          <p>
+            Le Grand Sphinx, les tombeaux des nobles, le spectacle son et lumière nocturne, et bien sûr, 
+            l'exploration intérieure des pyramides pour les plus aventureux. Le Musée égyptien du Caire 
+            abrite également des collections inestimables, dont le célèbre trésor de Toutânkhamon.
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- RIO PAGE -->
+    <div class="destination-page" id="page-rio">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/351283/pexels-photo-351283.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Rio de Janeiro</h1>
+          <p class="dest-hero-subtitle">La Cidade Maravilhosa</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>Vibrez au rythme de Rio</h2>
+          <p>
+            Rio de Janeiro est une explosion de couleurs, de musique et de vie. Nichée entre montagne et océan, 
+            la "Ville Merveilleuse" séduit par ses plages légendaires comme Copacabana et Ipanema, 
+            où le soleil, le sable et la samba se rencontrent dans une atmosphère unique.
+          </p>
+          <p>
+            Le Christ Rédempteur, perché au sommet du Corcovado, veille sur la ville en ouvrant grand ses bras. 
+            Cette statue iconique offre l'un des plus beaux panoramas du monde. Le Pain de Sucre, accessible 
+            par téléphérique, révèle lui aussi des vues à couper le souffle sur la baie de Guanabara.
+          </p>
+          <p>
+            Rio, c'est aussi le carnaval le plus célèbre du monde, une explosion de couleurs et de rythmes 
+            qui envahit les rues chaque année. Mais au-delà de la fête, c'est une ville authentique, 
+            chaleureuse, où la joie de vivre brésilienne s'exprime à chaque coin de rue.
+          </p>
+          <h2>Expériences incontournables</h2>
+          <p>
+            Assistez à un match au stade Maracanã, dégustez des moquecas dans les restaurants de bord de mer, 
+            dansez la samba dans les quartiers de Lapa et Santa Teresa, et perdez-vous dans les ruelles 
+            colorées des favelas pacifiées pour découvrir l'art urbain vibrant de Rio.
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- MYKONOS PAGE -->
+    <div class="destination-page" id="page-mykonos">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Mykonos</h1>
+          <p class="dest-hero-subtitle">Perle des Cyclades</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>L'île aux mille visages</h2>
+          <p>
+            Mykonos est l'incarnation parfaite du rêve grec : des maisons blanches éclatantes aux volets bleus, 
+            des moulins à vent emblématiques surplombant la mer Égée, et des ruelles labyrinthiques 
+            où il fait bon se perdre. Cette île des Cyclades allie tradition et modernité avec une élégance rare.
+          </p>
+          <p>
+            Le jour, flânez dans les ruelles pittoresques de Chora, la capitale, visitez la Petite Venise 
+            où les maisons surplombent les vagues, et relaxez-vous sur les plages dorées comme Paradise Beach 
+            ou Super Paradise. Le soir, l'île se transforme en l'une des destinations festives les plus prisées 
+            de la Méditerranée.
+          </p>
+          <p>
+            Mykonos est également le point de départ idéal pour visiter Délos, l'île sacrée où naquit Apollon, 
+            site archéologique majeur classé au patrimoine mondial de l'UNESCO. Entre histoire millénaire 
+            et vie nocturne effervescente, Mykonos offre une expérience grecque inoubliable.
+          </p>
+          <h2>Les incontournables</h2>
+          <p>
+            Les célèbres moulins à vent de Kato Mili, le quartier de la Petite Venise au coucher du soleil, 
+            les plages paradisiaques, l'excursion à Délos, et les tavernes traditionnelles où déguster 
+            mezze et poissons frais accompagnés d'ouzo.
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- PRAGUE PAGE -->
+    <div class="destination-page" id="page-prague">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Prague</h1>
+          <p class="dest-hero-subtitle">La Ville aux Cent Clochers</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>Un joyau architectural</h2>
+          <p>
+            Prague est une ville féerique qui semble tout droit sortie d'un conte. Capitale de la République tchèque, 
+            elle dévoile un patrimoine architectural exceptionnel alliant styles gothique, baroque, renaissance 
+            et Art nouveau dans une harmonie parfaite. Ses tours et clochers dessinent une silhouette unique 
+            dans le ciel d'Europe centrale.
+          </p>
+          <p>
+            Le pont Charles, orné de 30 statues baroques, enjambe majestueusement la Vltava et relie 
+            la Vieille Ville au quartier de Malá Strana. La place de la Vieille Ville, avec son horloge 
+            astronomique médiévale, est le cœur battant de Prague. Chaque heure, les automates s'animent 
+            sous les regards émerveillés des visiteurs.
+          </p>
+          <p>
+            Le château de Prague, l'un des plus grands complexes de châteaux au monde, domine la ville 
+            et offre des vues panoramiques spectaculaires. À l'intérieur, la cathédrale Saint-Guy 
+            éblouit par ses vitraux et son architecture gothique grandiose.
+          </p>
+          <h2>Expériences praguoises</h2>
+          <p>
+            Promenez-vous dans le quartier juif de Josefov, assistez à un concert de musique classique 
+            dans l'une des nombreuses églises baroques, dégustez la célèbre bière tchèque dans les brasseries 
+            traditionnelles, et perdez-vous dans les ruelles pavées du quartier de Malá Strana.
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- TOKYO PAGE -->
+    <div class="destination-page" id="page-tokyo">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Tokyo</h1>
+          <p class="dest-hero-subtitle">Là où Tradition et Futur se Rencontrent</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>La mégalopole fascinante</h2>
+          <p>
+            Tokyo est une ville de contrastes saisissants où temples zen millénaires côtoient gratte-ciels 
+            futuristes, où jardins traditionnels offrent une parenthèse de calme au milieu de l'effervescence 
+            urbaine. Cette mégalopole de 14 millions d'habitants est un concentré de culture japonaise, 
+            entre respect des traditions et innovations technologiques.
+          </p>
+          <p>
+            Dans le quartier d'Asakusa, le temple Senso-ji accueille les visiteurs sous sa majestueuse 
+            porte Kaminarimon. À Shibuya, le célèbre carrefour piéton illustre l'énergie débordante 
+            de Tokyo. Shinjuku éblouit par ses néons et son animation nocturne, tandis que Harajuku 
+            célèbre la mode avant-gardiste et la créativité japonaise.
+          </p>
+          <p>
+            Tokyo, c'est aussi une gastronomie d'exception avec plus d'étoiles Michelin que Paris, 
+            des ramen fumants dans de minuscules échoppes, des sushis d'une fraîcheur incomparable 
+            au marché de Tsukiji, et l'art du thé dans des maisons centenaires.
+          </p>
+          <h2>Incontournables tokyoïtes</h2>
+          <p>
+            Le sanctuaire Meiji entouré de sa forêt sacrée, la vue depuis la Tokyo Skytree, 
+            les jardins du Palais impérial, une soirée karaoke, les arcades de jeux vidéo à Akihabara, 
+            et bien sûr, l'expérience unique d'un ryokan traditionnel ou d'un onsen (bain thermal).
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- VENISE PAGE -->
+    <div class="destination-page" id="page-venise">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Venise</h1>
+          <p class="dest-hero-subtitle">La Sérénissime</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>La cité des Doges</h2>
+          <p>
+            Venise est une ville unique au monde, construite sur plus de 100 îles reliées par 400 ponts 
+            et sillonnée de 150 canaux. Cette prouesse architecturale défie les lois de la gravité 
+            et du temps depuis plus de 1 500 ans. Flotter sur les canaux vénitiens, c'est naviguer 
+            dans un musée à ciel ouvert d'une beauté intemporelle.
+          </p>
+          <p>
+            Le Grand Canal serpente entre palais gothiques et Renaissance, témoins de la splendeur 
+            de l'ancienne République de Venise. La place Saint-Marc, "le plus beau salon d'Europe" 
+            selon Napoléon, est dominée par la basilique byzantine ornée de mosaïques dorées 
+            et le campanile qui offre une vue panoramique sur la lagune.
+          </p>
+          <p>
+            Se perdre dans les calli (ruelles) de Venise est un plaisir en soi. Chaque pont, 
+            chaque campo (place) raconte une histoire. Les artisans perpétuent les traditions : 
+            souffleurs de verre à Murano, dentellières à Burano, fabricants de masques pour le carnaval.
+          </p>
+          <h2>Les essentiels vénitiens</h2>
+          <p>
+            Une promenade en gondole sous le pont des Soupirs, la visite du palais des Doges, 
+            un spritz sur une terrasse face au Grand Canal, les îles de Murano et Burano, 
+            le marché du Rialto, et un opéra à La Fenice. Pour éviter la foule, explorez 
+            les quartiers authentiques de Cannaregio et Dorsoduro.
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ZANZIBAR PAGE -->
+    <div class="destination-page" id="page-zanzibar">
+      <section class="dest-hero" style="background-image: url('https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="dest-hero-overlay"></div>
+        <div class="dest-hero-content">
+          <h1 class="dest-hero-title">Zanzibar</h1>
+          <p class="dest-hero-subtitle">L'Île aux Épices</p>
+        </div>
+      </section>
+      <section class="dest-content">
+        <div class="dest-info">
+          <h2>Paradis de l'océan Indien</h2>
+          <p>
+            Zanzibar est un archipel tanzanien qui évoque immédiatement le rêve : plages de sable blanc 
+            immaculé, eaux turquoise cristallines, cocotiers se balançant au gré de la brise tropicale. 
+            Mais Zanzibar, c'est bien plus qu'une carte postale paradisiaque, c'est un carrefour culturel 
+            fascinant où se mêlent influences africaines, arabes, persanes et indiennes.
+          </p>
+          <p>
+            Stone Town, la vieille ville classée au patrimoine mondial de l'UNESCO, fascine par son dédale 
+            de ruelles étroites, ses portes sculptées ornées de motifs arabes, et ses bazars parfumés 
+            aux senteurs de clou de girofle, cannelle et cardamome. Zanzibar fut longtemps le centre 
+            du commerce des épices, d'où son surnom d'"Île aux Épices".
+          </p>
+          <p>
+            Les plages du nord comme Nungwi et Kendwa sont idéales pour la baignade et le coucher du soleil, 
+            tandis que la côte est, avec Paje et Jambiani, attire les amateurs de kitesurf. La forêt de Jozani 
+            abrite les singes colobes rouges endémiques, et les récifs coralliens offrent des spots 
+            de plongée exceptionnels.
+          </p>
+          <h2>Expériences zanzibarites</h2>
+          <p>
+            Une excursion dans une plantation d'épices, nager avec les dauphins à Kizimkazi, 
+            explorer l'atoll de Mnemba pour le snorkeling, déguster des fruits de mer frais sur la plage, 
+            naviguer en boutre traditionnel au coucher du soleil, et découvrir l'histoire de l'île 
+            au Musée du Palais et à l'ancien marché aux esclaves.
+          </p>
+          <a href="#" class="back-btn" data-back="home">← Retour aux destinations</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">&copy; 2025 Voyage. Tous droits réservés.</p>
+        <p class="footer-text">Explorez le monde avec passion</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      // Menu hamburger toggle
+      document.querySelector('.nav-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+        this.classList.toggle('active');
+      });
+
+      // Fermer le menu au clic sur un lien
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          document.querySelector('.nav-menu').classList.remove('active');
+          document.querySelector('.nav-toggle').classList.remove('active');
+        });
+      });
+
+      // Navigation vers les pages de destination
+      const destinationCards = document.querySelectorAll('.destination-card');
+      const mainContent = document.querySelector('.main-content');
+      const destinationPages = document.querySelectorAll('.destination-page');
+      
+      destinationCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+          e.preventDefault();
+          const destination = this.getAttribute('data-destination');
+          
+          // Masquer le contenu principal
+          mainContent.classList.add('hidden');
+          
+          // Afficher la page de destination
+          const targetPage = document.getElementById('page-' + destination);
+          if (targetPage) {
+            targetPage.classList.add('active');
+            window.scrollTo(0, 0);
+          }
+        });
+      });
+
+      // Boutons de retour
+      const backButtons = document.querySelectorAll('.back-btn');
+      backButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Masquer toutes les pages de destination
+          destinationPages.forEach(page => {
+            page.classList.remove('active');
+          });
+          
+          // Afficher le contenu principal
+          mainContent.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
+      });
+
+      // Navigation depuis le menu
+      document.querySelectorAll('.nav-link[data-page="home"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Masquer toutes les pages de destination
+          destinationPages.forEach(page => {
+            page.classList.remove('active');
+          });
+          
+          // Afficher le contenu principal
+          mainContent.classList.remove('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
